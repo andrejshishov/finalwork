@@ -5,8 +5,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { v4 as uuidv4 } from 'uuid'
 import classNames from 'classnames'
-import noDataImage from '../../img/no-avatar.png'
 
+import noDataImage from '../../img/no-avatar.png'
 import { deleteArticle, fetchArticle, fetchArticles, setLike } from '../../services/articles-service'
 import { setGoTo } from '../../store/slices/status-slice'
 
