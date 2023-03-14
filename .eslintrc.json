@@ -1,0 +1,54 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true 
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "plugin:import/errors", "plugin:import/warnings","plugin:import/recommended"
+        
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "rules": {
+        "semi": "off",
+        "linebreak-style": "off",
+        "quotes": "off",
+        "eol-last": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": 0,
+        "indent": "off",
+        "class-methods-use-this": "off",
+        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+        "import/order": [
+            2,
+            {
+              "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+              "newlines-between": "always"
+            }
+            
+        ]
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        },
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
+  }

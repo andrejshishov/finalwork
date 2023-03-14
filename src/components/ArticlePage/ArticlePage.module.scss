@@ -1,0 +1,11 @@
+@import '../../vars';
+
+.main {
+  padding: 24px;
+  font-family: $inter;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: $light-blue;
+  min-height: calc(100vh - 80px);
+}
